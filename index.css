@@ -1,5 +1,6 @@
 *{
 	margin: 0;
+	box-sizing:border-box;
 }
 body{
 	font-family: SimHei,"黑体", Hiragino Sans GB, "冬青黑体", sans-serif;
@@ -7,6 +8,7 @@ body{
 .container{
 	width: 1024px;
 	margin: 0 auto;
+	position:relative;
 }
 .header-box{
 	height: 600px;
@@ -22,7 +24,7 @@ body{
 }
 .header-text-box{
 	width: 512px;
-	height: 195px;
+	height: 205px;
 	position: absolute;
 	left: 100px;
 	top: 150px;
@@ -34,14 +36,16 @@ body{
 	margin-bottom: 10px;
 	font-family: "Gotham SSm A","Gotham SSm B";
 	letter-spacing: 2px;
+	font-size:11px;
+	font-weight: 400;
 }
 .title{
-	line-height: 39px;
-	margin-top: 15px;
+	line-height: 60px;
+	margin-top: 10px;
 	margin-bottom: 24px; 
-	font-size: 30px;
+	font-size: 50px;
 	letter-spacing: 3.73px;
-
+	font-weight:500;
 }
 .small-desc{
 	line-height: 21px;
@@ -49,10 +53,11 @@ body{
 	font-size: 13px;
 	font-family: "Gotham SSm A","Gotham SSm B";
 	letter-spacing: normal;
+	margin-bottom:19.5px;
 }
 .botton{
 	display: block;
-	width: 161px;
+	width: 240px;
 	line-height:16.8px;
 	padding:10px 40px;
 	color:#fff;
@@ -64,7 +69,7 @@ body{
 	letter-spacing:1.3332px;
 }
 .banner-box{
-	height:305px;
+	height:405px;
 	padding-bottom:100px;
 	background:url(image/img-bg-1350.jpg);
 	background-size:100% auto;
@@ -90,8 +95,196 @@ body{
 .product-item h4{
 	padding-top:15px;
 	padding-left:20px;
-	font-size:18px;
+	font-size:11px;
 	color:#fff;
 	position:absolute;
-	line-height:20px;
+	line-height:18px;
+	letter-spacing:2PX;
+}
+.top-memu{
+	width:980px;
+	height:57px;
+	padding:0 22px;
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+	top:0;
+	left:0;
+	z-index:2000;
+	position:absolute;
+}
+.right,.left{
+	width:150px;
+	height:57px;
+	line-height:57px;
+	text-align:center;
+	color:#fff;
+	font-size:11px;
+}
+.center{
+	width:215px;
+	height:57px;
+	line-height:57px;
+	font-weight:10px;
+	color:#fff;
+	font-size:25px;
+	text-align:center;
+	letter-spacing:3.75px;
+}
+.left{
+	background:url(image/1.png);
+	background-position:left center;
+	background-repeat:no-repeat;
+}
+.right{
+	background:url(image/2.png);
+	background-position:right center;
+	background-repeat:no-repeat;
+}
+.title-box{
+	height:317.8px;
+}
+.title-box h6{
+	width:100%;
+	padding-top:83px;
+	margin-top:11px;
+	margin-bottom:16.5px;
+	font-weight:normal;
+	letter-spacing:2px;
+	line-height:13px;
+	text-align:center;
+	color:#000;
+	font-size:11px;
+}
+.title-box h2{
+	width:100%;
+	margin-top:25px;
+	margin-bottom:40px;
+	font-size:50px;
+	font-weight:500;
+	line-height:60px;
+	text-align: center;
+	color:#000;
+}
+.products{
+	width:705px;
+	height:312px;
+	margin:0 auto;
+	display:flex;
+	flex-wrap:wrap;
+}
+.product{
+	width:235px;
+	height:157px;
+}
+.product:nth-child(1){
+	background:url(image/beosound-shape.jpg);
+	background-size:100% auto;
+}
+.product:nth-child(2){
+	background:url(image/beovision-eclipse.jpg);
+	background-size:100% auto;
+}
+.product:nth-child(3){
+	background:url(image/beolab-50.jpg);
+	background-size:100% auto;
+}
+.product:nth-child(4){
+	background:url(image/beoplay-h9i.jpg);
+	background-size:100% auto;
+}
+.product:nth-child(5){
+	background:url(image/beoplay-p6-lifestyle-3.jpg);
+	background-size:100% auto;
+}
+.product:nth-child(6){
+	background:url(image/beosound-core.jpg);
+	background-size:100% auto;
+}
+.product h4{
+	padding-top: 15px;
+	padding-left: 20px;
+	margin-bottom: 4px;
+	color:#fff;
+	font-size: 11px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	line-height: 18px;
+}
+.introduce{
+	width:705px;
+	height:357px;
+	margin:0 auto;
+	display:flex;
+}
+.introduce-one{
+	width:176px;
+	height:317px;
+	margin-bottom: 40px;
+}
+.introduce-two{
+	width:176px;
+	height:317px;
+	margin-bottom: 40px;
+}
+.introduce-three{
+	width:352px;
+	height:317px;
+	margin-bottom: 40px;
+}
+.picture-one{
+	width:100%;
+	height:168px;
+	background:url(image/design-as-a-group-effort-01.jpg);
+	background-size:100% auto;
+}
+.intro{
+	width:167px;
+	height: 118px;
+	padding-right: 8.8px;
+	margin-top: 30px;
+}
+.picture-two{
+	width:100%;
+	height:168px;
+	background:url(image/the-krane.jpg);
+	background-size:100% auto;
+}
+.picture-three{
+	width:100%;
+	height:168px;
+	background:url(image/harmonies-story.jpg);
+	background-size:100% auto;
+}
+.intro1{
+	width:335px;
+	height: 118px;
+	padding-right: 8.8px;
+	margin-top: 30px;
+}
+.intro h5{
+	margin-bottom: 11.6px;
+	color:#000;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+}
+.intro p{
+	color:#000;
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 21px;
+}
+.intro1 h5{
+	margin-bottom: 11.6px;
+	color:#000;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+}
+.intro1 p{
+	color:#000;
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 21px;
 }
