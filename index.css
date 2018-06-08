@@ -1,290 +1,460 @@
-*{
-	margin: 0;
-	box-sizing:border-box;
+* {
+    margin: 0;
+    box-sizing: border-box;
 }
-body{
-	font-family: SimHei,"黑体", Hiragino Sans GB, "冬青黑体", sans-serif;
+
+body {
+    font-family: SimHei, "黑体", Hiragino Sans GB, "冬青黑体", sans-serif;
 }
-.container{
-	width: 1024px;
-	margin: 0 auto;
-	position:relative;
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
 }
-.header-box{
-	height: 600px;
-	background: #192314;
-	position: relative;
+
+.header-box {
+    height: 600px;
+    background: #192314;
+    position: relative;
 }
-.header-pic-box{
-	width: 662px;
-	height: 510px;
-	background: url(image/green-beosound-shape-desktop.jpg);
-	background-size: cover;
-	float: right;
+
+.header-pic-box {
+    width: 662px;
+    height: 510px;
+    background: url(image/green-beosound-shape-desktop.jpg);
+    background-size: cover;
+    float: right;
 }
-.header-text-box{
-	width: 512px;
-	height: 205px;
-	position: absolute;
-	left: 100px;
-	top: 150px;
-	color: #fff;
-	font-size: 12px;
+
+.header-text-box {
+    width: 512px;
+    height: 205px;
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    color: #fff;
+    font-size: 12px;
 }
-.description{
-	line-height: 24px;
-	margin-bottom: 10px;
-	font-family: "Gotham SSm A","Gotham SSm B";
-	letter-spacing: 2px;
-	font-size:11px;
-	font-weight: 400;
+
+.description {
+    line-height: 24px;
+    margin-bottom: 10px;
+    font-family: SimHei, "黑体", Hiragino Sans GB, "冬青黑体", sans-serif;
+    letter-spacing: 2px;
+    font-size: 11px;
+    font-weight: 400;
 }
-.title{
-	line-height: 60px;
-	margin-top: 10px;
-	margin-bottom: 24px; 
-	font-size: 50px;
-	letter-spacing: 3.73px;
-	font-weight:500;
+
+.title {
+    line-height: 60px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    font-size: 50px;
+    letter-spacing: 4px;
+    font-weight: 500;
 }
-.small-desc{
-	line-height: 21px;
-	margin-bottom: 20px;
-	font-size: 13px;
-	font-family: "Gotham SSm A","Gotham SSm B";
-	letter-spacing: normal;
-	margin-bottom:19.5px;
+
+.small-desc {
+    line-height: 21px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-family: SimHei, "黑体", Hiragino Sans GB, "冬青黑体", sans-serif;
+    letter-spacing: normal;
 }
-.botton{
-	display: block;
-	width: 240px;
-	line-height:16.8px;
-	padding:10px 40px;
-	color:#fff;
-	text-decoration:none;
-	font-size:9.6px;
-	background:rgba(255,255,255,0.1);
-	font-weight:500;
-	font-family:"Gotham SSm A","Gotham SSm B";
-	letter-spacing:1.3332px;
+
+.button {
+    display: block;
+    width: 240px;
+    line-height: 17px;
+    padding: 10px 40px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    font-weight: 500;
+    font-family: SimHei, "黑体", Hiragino Sans GB, "冬青黑体", sans-serif;
+    letter-spacing: 2px;
 }
-.banner-box{
-	height:405px;
-	padding-bottom:100px;
-	background:url(image/img-bg-1350.jpg);
-	background-size:100% auto;
-	background-position:0 -158px;
+
+.banner-box {
+    height: 405px;
+    padding-bottom: 100px;
+    background: url(image/img-bg-1350.jpg) 0 -158px / 100% auto;
 }
-.product-box{
-	width:705px;
-	height:353px;
-	margin:0 auto;
-	margin-top:-48px;
-	position:relative;
-	z-index:100;
+
+.product-box {
+    width: 705px;
+    height: 353px;
+    margin: -48px auto;
+    position: relative;
+    z-index: 100;
 }
-.product-item{
-	width:235px;
-	height:353px;
-	float:left;
-	position:relative;
+
+.product-item {
+    width: 235px;
+    height: 353px;
+    float: left;
+    position: relative;
 }
-.product-item img{
-	width:100%;
+
+.product-item img {
+    width: 100%;
 }
-.product-item h4{
-	padding-top:15px;
-	padding-left:20px;
-	font-size:11px;
-	color:#fff;
-	position:absolute;
-	line-height:18px;
-	letter-spacing:2PX;
+
+.product-item h4 {
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 11px;
+    color: #fff;
+    position: absolute;
+    line-height: 18px;
+    letter-spacing: 2PX;
 }
-.top-memu{
-	width:980px;
-	height:57px;
-	padding:0 22px;
-	display:flex;
-	justify-content:space-between;
-	width:100%;
-	top:0;
-	left:0;
-	z-index:2000;
-	position:absolute;
+
+.top-menu {
+    height: 57px;
+    padding: 0 22px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    position: absolute;
 }
-.right,.left{
-	width:150px;
-	height:57px;
-	line-height:57px;
-	text-align:center;
-	color:#fff;
-	font-size:11px;
+
+.top-menu .right, .top-menu .left {
+    width: 150px;
+    height: 57px;
+    line-height: 57px;
+    text-align: center;
+    color: #fff;
+    font-size: 11px;
 }
-.center{
-	width:215px;
-	height:57px;
-	line-height:57px;
-	font-weight:10px;
-	color:#fff;
-	font-size:25px;
-	text-align:center;
-	letter-spacing:3.75px;
+
+.center {
+    width: 215px;
+    height: 57px;
+    line-height: 57px;
+    font-weight: 100;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 4px;
 }
-.left{
-	background:url(image/1.png);
-	background-position:left center;
-	background-repeat:no-repeat;
+
+.top-menu .left {
+    background: url(image/1.png) no-repeat left center;
 }
-.right{
-	background:url(image/2.png);
-	background-position:right center;
-	background-repeat:no-repeat;
+
+.top-menu .right {
+    background: url(image/2.png) no-repeat right center;
 }
-.title-box{
-	height:317.8px;
+
+.title-box {
+    height: 318px;
 }
-.title-box h6{
-	width:100%;
-	padding-top:83px;
-	margin-top:11px;
-	margin-bottom:16.5px;
-	font-weight:normal;
-	letter-spacing:2px;
-	line-height:13px;
-	text-align:center;
-	color:#000;
-	font-size:11px;
+
+.title-box h6 {
+    width: 100%;
+    padding-top: 83px;
+    margin-top: 11px;
+    margin-bottom: 17px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 13px;
+    text-align: center;
+    color: #000;
+    font-size: 11px;
 }
-.title-box h2{
-	width:100%;
-	margin-top:25px;
-	margin-bottom:40px;
-	font-size:50px;
-	font-weight:500;
-	line-height:60px;
-	text-align: center;
-	color:#000;
+
+.title-box h2 {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: center;
+    color: #000;
 }
-.products{
-	width:705px;
-	height:312px;
-	margin:0 auto;
-	display:flex;
-	flex-wrap:wrap;
+
+.products {
+    width: 705px;
+    height: 312px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
-.product{
-	width:235px;
-	height:157px;
+
+.product {
+    width: 235px;
+    height: 157px;
 }
-.product:nth-child(1){
-	background:url(image/beosound-shape.jpg);
-	background-size:100% auto;
+
+.product:nth-child(1) {
+    background: url(image/beosound-shape.jpg);
+    background-size: 100% auto;
 }
-.product:nth-child(2){
-	background:url(image/beovision-eclipse.jpg);
-	background-size:100% auto;
+
+.product:nth-child(2) {
+    background: url(image/beovision-eclipse.jpg);
+    background-size: 100% auto;
 }
-.product:nth-child(3){
-	background:url(image/beolab-50.jpg);
-	background-size:100% auto;
+
+.product:nth-child(3) {
+    background: url(image/beolab-50.jpg);
+    background-size: 100% auto;
 }
-.product:nth-child(4){
-	background:url(image/beoplay-h9i.jpg);
-	background-size:100% auto;
+
+.product:nth-child(4) {
+    background: url(image/beoplay-h9i.jpg);
+    background-size: 100% auto;
 }
-.product:nth-child(5){
-	background:url(image/beoplay-p6-lifestyle-3.jpg);
-	background-size:100% auto;
+
+.product:nth-child(5) {
+    background: url(image/beoplay-p6-lifestyle-3.jpg);
+    background-size: 100% auto;
 }
-.product:nth-child(6){
-	background:url(image/beosound-core.jpg);
-	background-size:100% auto;
+
+.product:nth-child(6) {
+    background: url(image/beosound-core.jpg);
+    background-size: 100% auto;
 }
-.product h4{
-	padding-top: 15px;
-	padding-left: 20px;
-	margin-bottom: 4px;
-	color:#fff;
-	font-size: 11px;
-	font-weight: 400;
-	letter-spacing: 2px;
-	line-height: 18px;
+
+.product h4 {
+    padding-top: 15px;
+    padding-left: 20px;
+    margin-bottom: 4px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 18px;
 }
-.introduce{
-	width:705px;
-	height:357px;
-	margin:0 auto;
-	display:flex;
+
+.introduce {
+    width: 705px;
+    height: 457px;
+    margin: 0 auto;
+    display: flex;
 }
-.introduce-one{
-	width:176px;
-	height:317px;
-	margin-bottom: 40px;
+
+.introduce-one {
+    width: 176px;
+    height: 317px;
+    margin-bottom: 40px;
 }
-.introduce-two{
-	width:176px;
-	height:317px;
-	margin-bottom: 40px;
+
+.introduce-two {
+    width: 176px;
+    height: 317px;
+    margin-bottom: 40px;
 }
-.introduce-three{
-	width:352px;
-	height:317px;
-	margin-bottom: 40px;
+
+.introduce-three {
+    width: 352px;
+    height: 317px;
+    margin-bottom: 40px;
 }
-.picture-one{
-	width:100%;
-	height:168px;
-	background:url(image/design-as-a-group-effort-01.jpg);
-	background-size:100% auto;
+
+.picture-one {
+    width: 100%;
+    height: 168px;
+    background: url(image/design-as-a-group-effort-01.jpg);
+    background-size: 100% auto;
 }
-.intro{
-	width:167px;
-	height: 118px;
-	padding-right: 8.8px;
-	margin-top: 30px;
+
+.intro {
+    width: 167px;
+    height: 118px;
+    padding-right: 9px;
+    margin-top: 30px;
 }
-.picture-two{
-	width:100%;
-	height:168px;
-	background:url(image/the-krane.jpg);
-	background-size:100% auto;
+
+.picture-two {
+    width: 100%;
+    height: 168px;
+    background: url(image/the-krane.jpg);
+    background-size: 100% auto;
 }
-.picture-three{
-	width:100%;
-	height:168px;
-	background:url(image/harmonies-story.jpg);
-	background-size:100% auto;
+
+.picture-three {
+    width: 100%;
+    height: 168px;
+    background: url(image/harmonies-story.jpg);
+    background-size: 100% auto;
 }
-.intro1{
-	width:335px;
-	height: 118px;
-	padding-right: 8.8px;
-	margin-top: 30px;
+
+.intro1 {
+    width: 335px;
+    height: 118px;
+    padding-right: 9px;
+    margin-top: 30px;
 }
-.intro h5{
-	margin-bottom: 11.6px;
-	color:#000;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 24px;
+
+.intro h5 {
+    margin-bottom: 12px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
 }
-.intro p{
-	color:#000;
-	font-size: 13px;
-	font-weight: 300;
-	line-height: 21px;
+
+.intro p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 21px;
 }
-.intro1 h5{
-	margin-bottom: 11.6px;
-	color:#000;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 24px;
+
+.intro1 h5 {
+    margin-bottom: 12px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
 }
-.intro1 p{
-	color:#000;
-	font-size: 13px;
-	font-weight: 300;
-	line-height: 21px;
+
+.intro1 p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.info-list {
+    width: 1024px;
+    height: 538px;
+    padding: 0 14px;
+    margin: 0 auto;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    display: flex;
+}
+
+.info-item {
+    width: 498px;
+    height: 100%;
+    text-align: center;
+}
+
+.info-item:nth-child(1) {
+    border-right: 1px solid #f2f2f2;
+}
+
+.info-item .icon {
+    margin: 80px 222px 30px 222px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+}
+
+.info-item:nth-child(1) .icon {
+    background: #000 url("image/3.png") no-repeat center center;
+}
+
+.info-item:nth-child(2) .icon {
+    background: #000 url("image/4.png") no-repeat center center;
+}
+
+.info-item h5 {
+    height: 23px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.info-item h6 {
+    height: 21px;
+    margin: 20px auto;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 21px;
+    text-align: center;
+    color: #888;
+}
+
+.info-item .desc {
+    width: 290px;
+}
+
+.info-item .button {
+    width: 210px;
+    height: 33px;
+    margin: 8px auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
+    font-size: 12px;
+}
+
+.info-item input {
+    display: block;
+    outline: none;
+    height: 56px;
+    width: 372px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    margin: 13px 62px 40px 62px;
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 21px;
+
+}
+
+.info-item .search {
+    margin-top: 116px;
+}
+
+.footer {
+    width: 996px;
+    height: 81px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.footer .left {
+    width: 349px;
+    height: 62px;
+    padding: 20px 14px;
+    display: flex;
+}
+
+.footer .left .world {
+    width: 22px;
+    height: 22px;
+    background: url("image/5.png") no-repeat left center;
+}
+
+.footer .left a {
+    height: 22px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 22px;
+    text-decoration: none;
+    margin-left: 16px;
+}
+
+.footer .right {
+    width: 629px;
+    height: 82px;
+    padding: 20px 14px;
+}
+
+.footer .right a {
+    height: 19px;
+    margin-left: 16px;
+    color: #000;
+    line-height: 19px;
+    font-weight: 400;
+    text-decoration: none;
+    float: right;
+    font-size: 12px;
 }
